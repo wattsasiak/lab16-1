@@ -1,1 +1,4 @@
-<p>social-posts works!</p>
+<ng-container *ngFor="let mypost of myposts">
+<app-post [thepost]="mypost"></app-post>
+</ng-container>
+

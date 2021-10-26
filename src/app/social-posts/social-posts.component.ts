@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../post';
 
 @Component({
   selector: 'app-social-posts',
@@ -6,6 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./social-posts.component.css']
 })
 export class SocialPostsComponent implements OnInit {
+
+  myposts: Post[] = [
+    {
+      title: 'November Already?',
+      thought: 'How is it possible that the holidays are right around the corner?'
+    },
+    {
+      title: 'Why do I live in Michigan',
+      thought: 'I complain about Michigan weather every year, yet I still live here...why??'
+
+    },
+    {
+      title: 'Coding is fun',
+      thought: 'Coding is challenging but fun. Excited to learn new things!'
+    }
+  ]
+
+
+  thetitle: string = '';
+  thethought: string = '';
+
 
   constructor() { }
 

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Post } from '../post';
+
 
 @Component({
   selector: 'app-post-form',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit {
+  thetitle: string = '';
+  thethought: string = '';
+  theposts: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
+  add() {
+    this.theposts.push({title:this.thetitle, thought:this.thethought});
+  }
+
 
 }

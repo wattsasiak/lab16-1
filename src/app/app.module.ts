@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SocialPostsComponent } from './social-posts/social-posts.component';
 import { PostFormComponent } from './post-form/post-form.component';
+import { PostComponent } from './post/post.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SocialPostsComponent,
-    PostFormComponent
+    PostFormComponent,
+    PostComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
