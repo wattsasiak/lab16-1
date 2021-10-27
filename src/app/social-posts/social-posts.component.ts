@@ -24,14 +24,22 @@ export class SocialPostsComponent implements OnInit {
     }
   ]
 
-
   thetitle: string = '';
   thethought: string = '';
+  theposts: any;
 
-
+ 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  deletePost(post: Post){
+    alert(`Post: {post.title} has been deleted.`);
+  }
+
+  add() {
+    this.theposts.push({title:this.thetitle, thought:this.thethought});
   }
 
 }

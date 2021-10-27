@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ɵEmptyOutletComponent } from '@angular/router';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Post } from '../post';
+import { EventEmitter } from '@angular/core';
 
 
 
@@ -11,8 +11,8 @@ import { Post } from '../post';
 })
 export class PostComponent implements OnInit {
   @Input() thepost: Post ={
-    title: 'new',
-    thought: 'testing thought'
+    title: 'Coding is fun',
+    thought: 'Coding is challenging but fun. Excited to learn new things!'
   };
 
 

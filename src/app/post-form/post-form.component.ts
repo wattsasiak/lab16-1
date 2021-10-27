@@ -17,10 +17,11 @@ export class PostFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   add() {
-    this.theposts.push({title:this.thetitle, thought:this.thethought});
+    this.theposts.push({title:this.thetitle, thoughtc:this.thethought});
   }
+
+  
 
 
 }
